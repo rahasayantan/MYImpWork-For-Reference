@@ -1,0 +1,23 @@
+1. Finance
+  - Stock Prediction
+    - Regression Based
+    - DL Based
+    - RL Based
+    
+2. Robotics
+  - Build my own robot for my kid
+    - Robot should recongnize me / my kid 
+      - Facial Recognition 
+      - Liviness Detection)
+    - Should recognize voice commands
+      - Trigger words
+      - Command and behaviour
+      - RL based behaviour - Environment Aware    
+  
+3. Blood Bank - Blood Rationalisation / Wastage Prevention
+  - For single Hospital
+  - How to create a connected platform for all hospitals and control information and inventory rationalization across all hospitals
+
+4. NLP Related
+  - Voice Detection
+  - Speech to Text
