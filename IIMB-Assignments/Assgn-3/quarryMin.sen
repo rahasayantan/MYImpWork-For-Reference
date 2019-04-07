@@ -1,0 +1,247 @@
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   1
+
+Problem:    
+Objective:  Objective = 1533000000 (MINimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 Demand_Constraints_6
+                    NL    7000.00000        .         7000.00000     6600.00000 -242000.00000    1.4362e+09 carryFwd_4
+                                      242000.00000          +Inf     7000.00000          +Inf     1.533e+09 _C5
+
+     2 No_Carry_at_first_period
+                    NS        .             .             .              .               -Inf     1.533e+09 carryFwd_0
+                                        5000.00000        .              .               +Inf     1.533e+09 _C5
+
+     3 No_Carry_at_last_period
+                    NS        .             .             .              .               -Inf     1.533e+09 _C5
+                                        1000.00000        .           800.00000          +Inf    1.5338e+09 unMetDemand_5
+
+     4 Production_Constraints_Q1_1
+                    NU     800.00000        .               -Inf      700.00000          -Inf    1.5353e+09 carryFwd_1
+                                      -23000.00000     800.00000     1600.00000   23000.00000    1.5146e+09 q2Stones_3
+
+     5 Production_Constraints_Q1_2
+                    NU     800.00000        .               -Inf      600.00000          -Inf    1.5378e+09 carryFwd_2
+                                      -24000.00000     800.00000     1600.00000   24000.00000    1.5138e+09 q2Stones_3
+
+     6 Production_Constraints_Q1_3
+                    NU     800.00000        .               -Inf      200.00000          -Inf     1.548e+09 Production_Constraints_Q2_3
+                                      -25000.00000     800.00000     1600.00000   25000.00000     1.513e+09 q2Stones_3
+
+     7 Production_Constraints_Q1_4
+                    NU     800.00000        .               -Inf      400.00000          -Inf    1.5464e+09 Stone_Storage_Limit_3
+                                      -33500.00000     800.00000     1600.00000   33500.00000    1.5062e+09 carryFwd_3
+
+     8 Production_Constraints_Q1_5
+                    NU     800.00000        .               -Inf      400.00000          -Inf    1.5468e+09 Stone_Storage_Limit_3
+                                      -34500.00000     800.00000     1200.00000   34500.00000    1.5192e+09 carryFwd_4
+
+     9 Production_Constraints_Q1_6
+                    NU     800.00000        .               -Inf      400.00000          -Inf    1.5468e+09 Stone_Storage_Limit_3
+                                      -34500.00000     800.00000     1200.00000   34500.00000    1.5192e+09 carryFwd_4
+
+    10 Production_Constraints_Q2_1
+                    BS        .         1400.00000          -Inf      800.00000   -2000.00000     1.533e+09 q2Stones_1
+                                            .         1400.00000         .               +Inf     1.533e+09
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   2
+
+Problem:    
+Objective:  Objective = 1533000000 (MINimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    11 Production_Constraints_Q2_2
+                    BS        .         1400.00000          -Inf      800.00000   -1000.00000     1.533e+09 q2Stones_2
+                                            .         1400.00000         .               +Inf     1.533e+09
+
+    12 Production_Constraints_Q2_3
+                    BS     800.00000     600.00000          -Inf     1200.00000   -9500.00000    1.5254e+09 Production_Constraints_Q2_6
+                                            .         1400.00000         .         1000.00000    1.5338e+09 q2Stones_2
+
+    13 Production_Constraints_Q2_4
+                    BS        .         1400.00000          -Inf         .               -Inf     1.533e+09
+                                            .         1400.00000         .               +Inf     1.533e+09
+
+    14 Production_Constraints_Q2_5
+                    BS        .         1400.00000          -Inf         .               -Inf     1.533e+09
+                                            .         1400.00000         .               +Inf     1.533e+09
+
+    15 Production_Constraints_Q2_6
+                    NU    1400.00000        .               -Inf     1000.00000          -Inf    1.5368e+09 Stone_Storage_Limit_3
+                                       -9500.00000    1400.00000     1800.00000    9500.00000    1.5292e+09 carryFwd_4
+
+    16 Stone_Storage_Limit_1
+                    BS     100.00000    1100.00000          -Inf           +Inf   -1000.00000    1.5329e+09 unMetDemand_1
+                                            .         1200.00000         .        23000.00000    1.5353e+09 Production_Constraints_Q1_1
+
+    17 Stone_Storage_Limit_2
+                    BS     200.00000    1000.00000          -Inf           +Inf   -1000.00000    1.5328e+09 unMetDemand_2
+                                            .         1200.00000      100.00000   23000.00000    1.5376e+09 Production_Constraints_Q1_1
+
+    18 Stone_Storage_Limit_3
+                    BS     800.00000     400.00000          -Inf           +Inf   -1000.00000    1.5322e+09 unMetDemand_3
+                                            .         1200.00000      800.00000          +Inf          +Inf
+
+    19 Stone_Storage_Limit_4
+                    BS     400.00000     800.00000          -Inf      400.00000   -1000.00000    1.5326e+09 _C4
+                                            .         1200.00000      400.00000          +Inf          +Inf
+
+    20 Stone_Storage_Limit_5
+                    BS        .         1200.00000          -Inf           +Inf   -1000.00000     1.533e+09 carryFwd_5
+                                            .         1200.00000         .               +Inf     1.533e+09
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   3
+
+Problem:    
+Objective:  Objective = 1533000000 (MINimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    21 Stone_Storage_Limit_6
+                    BS        .         1200.00000          -Inf         .               -Inf     1.533e+09
+                                            .         1200.00000         .               +Inf     1.533e+09
+
+    22 Stopped_Production_1
+                    NS        .             .             .              .               -Inf     1.533e+09 q2Stones_4
+                                       -8500.00000        .           800.00000          +Inf    1.5262e+09 carryFwd_3
+
+    23 Stopped_Production_2
+                    NS        .             .             .              .               -Inf     1.533e+09 q2Stones_5
+                                       -9500.00000        .           400.00000          +Inf    1.5292e+09 carryFwd_4
+
+    24 _C1          NU     700.00000        .               -Inf      700.00000          -Inf     1.533e+09 _C5
+                                       -4000.00000     700.00000      800.00000    4000.00000    1.5326e+09 carryFwd_1
+
+    25 _C2          NU     700.00000        .               -Inf      700.00000          -Inf     1.533e+09 _C5
+                                       -3000.00000     700.00000      900.00000    3000.00000    1.5324e+09 carryFwd_2
+
+    26 _C3          NU    1000.00000        .               -Inf     1000.00000          -Inf     1.533e+09 _C5
+                                       -2000.00000    1000.00000     1400.00000    2000.00000    1.5322e+09 carryFwd_4
+
+    27 _C4          NU    1200.00000        .               -Inf     1200.00000          -Inf     1.533e+09 _C5
+                                       -1000.00000    1200.00000     1600.00000    1000.00000    1.5326e+09 carryFwd_4
+
+    28 _C5          BS    2000.00000        .               -Inf           +Inf        .          1.533e+09 _C6
+                                            .         2000.00000     2000.00000          +Inf          +Inf
+
+    29 _C6          NU    1400.00000        .               -Inf     1400.00000          -Inf     1.533e+09 _C5
+                                            .         1400.00000     2200.00000        .          1.533e+09 unMetDemand_5
+
+    30 x            NS        .             .             .              .               -Inf     1.533e+09 _C5
+                                       -4000.00000        .           100.00000          +Inf    1.5326e+09 carryFwd_1
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   4
+
+Problem:    
+Objective:  Objective = 1533000000 (MINimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 carryFwd_0   BS        .         1000.00000        .              .               -Inf     1.533e+09
+                                            .               +Inf         .               +Inf     1.533e+09
+
+     2 carryFwd_1   BS     100.00000    1000.00000        .          1200.00000        .         1.5329e+09 unMetDemand_1
+                                            .               +Inf     -100.00000   24000.00000    1.5353e+09 Production_Constraints_Q1_1
+
+     3 carryFwd_2   BS     200.00000    1000.00000        .          1200.00000        .         1.5328e+09 unMetDemand_2
+                                            .               +Inf      100.00000   24000.00000    1.5376e+09 Production_Constraints_Q1_1
+
+     4 carryFwd_3   BS     800.00000    1000.00000        .          1200.00000        .         1.5322e+09 unMetDemand_3
+                                            .               +Inf      800.00000          +Inf          +Inf
+
+     5 carryFwd_4   BS     400.00000    1000.00000        .           400.00000        .         1.5326e+09 _C4
+                                            .               +Inf      400.00000          +Inf          +Inf
+
+     6 carryFwd_5   NL        .         1000.00000        .          -800.00000        .         1.5322e+09 unMetDemand_5
+                                        1000.00000          +Inf     1200.00000          +Inf    1.5342e+09 Stone_Storage_Limit_5
+
+     7 carryFwd_6   BS        .         1000.00000        .              .               -Inf     1.533e+09
+                                            .               +Inf         .               +Inf     1.533e+09
+
+     8 q1Stones_1   BS     800.00000  215000.00000        .           800.00000          -Inf          -Inf
+                                            .               +Inf      700.00000  238000.00000    1.5514e+09 Production_Constraints_Q1_1
+
+     9 q1Stones_2   BS     800.00000  215000.00000        .           800.00000          -Inf          -Inf
+                                            .               +Inf      600.00000  239000.00000    1.5522e+09 Production_Constraints_Q1_2
+
+    10 q1Stones_3   BS     800.00000  215000.00000        .           800.00000          -Inf          -Inf
+                                            .               +Inf      200.00000  240000.00000     1.553e+09 Production_Constraints_Q1_3
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   5
+
+Problem:    
+Objective:  Objective = 1533000000 (MINimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    11 q1Stones_4   BS     800.00000  207500.00000        .           800.00000          -Inf          -Inf
+                                            .               +Inf      400.00000  241000.00000    1.5598e+09 Production_Constraints_Q1_4
+
+    12 q1Stones_5   BS     800.00000  207500.00000        .           800.00000          -Inf          -Inf
+                                            .               +Inf      400.00000  242000.00000    1.5606e+09 Production_Constraints_Q1_5
+
+    13 q1Stones_6   BS     800.00000  207500.00000        .           800.00000          -Inf          -Inf
+                                            .               +Inf      400.00000  242000.00000    1.5606e+09 Production_Constraints_Q1_6
+
+    14 q2Stones_1   NL        .       240000.00000        .          -100.00000  238000.00000    1.5328e+09 carryFwd_1
+                                        2000.00000          +Inf      800.00000          +Inf    1.5346e+09 q2Stones_3
+
+    15 q2Stones_2   NL        .       240000.00000        .          -200.00000  239000.00000    1.5328e+09 carryFwd_2
+                                        1000.00000          +Inf      800.00000          +Inf    1.5338e+09 q2Stones_3
+
+    16 q2Stones_3   BS     800.00000  240000.00000        .          1200.00000  230500.00000    1.5254e+09 Production_Constraints_Q2_6
+                                            .               +Inf     -200.00000  241000.00000    1.5338e+09 q2Stones_2
+
+    17 q2Stones_4   BS        .       232500.00000        .              .               -Inf     1.533e+09
+                                            .               +Inf         .               +Inf     1.533e+09
+
+    18 q2Stones_5   BS        .       232500.00000        .              .               -Inf     1.533e+09
+                                            .               +Inf         .               +Inf     1.533e+09
+
+    19 q2Stones_6   BS    1400.00000  232500.00000        .          1400.00000          -Inf          -Inf
+                                            .               +Inf     1000.00000  242000.00000    1.5463e+09 Production_Constraints_Q2_6
+
+    20 unMetDemand_0
+                    BS        .             .             .              .               -Inf     1.533e+09
+                                            .               +Inf         .               +Inf     1.533e+09
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   6
+
+Problem:    
+Objective:  Objective = 1533000000 (MINimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    21 unMetDemand_1
+                    NL        .             .             .          -100.00000   -1000.00000    1.5329e+09 carryFwd_1
+                                        1000.00000          +Inf     1100.00000          +Inf    1.5341e+09 Stone_Storage_Limit_1
+
+    22 unMetDemand_2
+                    NL        .             .             .          -200.00000   -1000.00000    1.5328e+09 carryFwd_2
+                                        1000.00000          +Inf     1000.00000          +Inf     1.534e+09 Stone_Storage_Limit_2
+
+    23 unMetDemand_3
+                    NL        .             .             .          -800.00000   -1000.00000    1.5322e+09 carryFwd_3
+                                        1000.00000          +Inf      400.00000          +Inf    1.5334e+09 Stone_Storage_Limit_3
+
+    24 unMetDemand_4
+                    NL        .             .             .          -400.00000   -1000.00000    1.5326e+09 carryFwd_4
+                                        1000.00000          +Inf      800.00000          +Inf    1.5338e+09 Stone_Storage_Limit_4
+
+    25 unMetDemand_5
+                    BS     800.00000        .             .           800.00000        .          1.533e+09 _C6
+                                            .               +Inf      400.00000    9500.00000    1.5406e+09 Production_Constraints_Q2_6
+
+    26 unMetDemand_6
+                    NL        .             .             .          -800.00000        .          1.533e+09 unMetDemand_5
+                                            .               +Inf         .               +Inf     1.533e+09 _C5
+
+End of report

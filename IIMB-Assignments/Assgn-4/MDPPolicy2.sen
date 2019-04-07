@@ -1,0 +1,39 @@
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   1
+
+Problem:    
+Objective:  Objective = 406.8 (MINimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 Constraint_for_State_S1_Policy_1
+                    BS      37.56000     -17.56000      20.00000           +Inf     -13.05085     -83.38983 Constraint_for_State_S1_Policy_2
+                                            .               +Inf           -Inf      25.55556    1366.66667 Constraint_for_State_S2_Policy_2
+
+     2 Constraint_for_State_S1_Policy_2
+                    NL      30.00000        .           30.00000       15.11864     -15.40000     177.62712 Constraint_for_State_S1_Policy_1
+                                          15.40000          +Inf           +Inf          +Inf          +Inf
+
+     3 Constraint_for_State_S2_Policy_1
+                    BS       6.90000      -8.90000      -2.00000       60.55556      -8.36364     349.09091 Constraint_for_State_S2_Policy_2
+                                            .               +Inf        6.90000          +Inf          +Inf
+
+     4 Constraint_for_State_S2_Policy_2
+                    NL     -12.00000        .          -12.00000      -28.18182      -4.60000     332.36364 Constraint_for_State_S2_Policy_1
+                                           4.60000          +Inf       85.55556          +Inf     855.55556 Constraint_for_State_S1_Policy_1
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   2
+
+Problem:    
+Objective:  Objective = 406.8 (MINimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 x_s1         BS     224.40000       1.00000        .                +Inf       -.87805     -14.63415 Constraint_for_State_S1_Policy_2
+                                            .               +Inf      224.40000          +Inf          +Inf
+
+     2 x_s2         BS     182.40000       1.00000        .           455.55556       -.64286     107.14286 Constraint_for_State_S2_Policy_2
+                                            .               +Inf      182.40000          +Inf          +Inf
+
+End of report

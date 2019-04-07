@@ -1,0 +1,80 @@
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   1
+
+Problem:    
+Objective:  Objective = 14775 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 Demand_1     BS      75.00000     175.00000          -Inf       50.37037      -5.00000   14400.00000 x_kbh
+                                            .          250.00000      165.00000      21.66667   16400.00000 Demand_2
+
+     2 Demand_2     NU     120.00000        .               -Inf         .          -16.25000   12825.00000 Non_Zero_Constraint_2
+                                          16.25000     120.00000      220.00000          +Inf   16400.00000 Non_Zero_Constraint_1
+
+     3 Demand_3     NU      90.00000        .               -Inf         .          -48.75000   10387.50000 Non_Zero_Constraint_3
+                                          48.75000      90.00000      331.81818          +Inf   26563.63636 Supply_5
+
+     4 Demand_4     BS        .          550.00000          -Inf         .               -Inf   14775.00000
+                                            .          550.00000       98.51852       1.25000   14775.00000 x_kbh
+
+     5 Non_Zero_Constraint_1
+                    BS      75.00000     -75.00000        .            50.37037      -5.00000   14400.00000 x_kbh
+                                            .               +Inf      165.00000      21.66667   16400.00000 Demand_2
+
+     6 Non_Zero_Constraint_2
+                    BS     120.00000    -120.00000        .              .          -16.25000   12825.00000 Demand_2
+                                            .               +Inf      120.00000          +Inf          +Inf
+
+     7 Non_Zero_Constraint_3
+                    BS      90.00000     -90.00000        .              .          -48.75000   10387.50000 Demand_3
+                                            .               +Inf       90.00000          +Inf          +Inf
+
+     8 Non_Zero_Constraint_4
+                    BS        .             .             .              .               -Inf   14775.00000
+                                            .               +Inf       98.51852       1.25000   14775.00000 x_kbh
+
+     9 Supply_1     BS      82.50000     417.50000          -Inf       53.25000    -150.00000    2400.00000 Demand_3
+                                            .          500.00000      104.66667       5.55556   15233.33333 x_kbh
+
+    10 Supply_2     BS     162.00000     288.00000          -Inf       99.00000     -69.64286    3492.85714 Demand_3
+                                            .          450.00000      230.96296       1.78571   15064.28571 x_kbh
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   2
+
+Problem:    
+Objective:  Objective = 14775 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    11 Supply_3     NU      75.00000        .               -Inf       45.00000    -112.50000   11400.00000 Non_Zero_Constraint_1
+                                         112.50000      75.00000      128.20000          +Inf   20760.00000 Supply_5
+
+    12 Supply_4     BS     105.00000     195.00000          -Inf       55.50000     -88.63636    5468.18182 Demand_3
+                                            .          300.00000      149.33333       2.77778   15066.66667 x_kbh
+
+    13 Supply_5     BS     133.50000      66.50000          -Inf       96.00000     -90.00000    2760.00000 Supply_3
+                                            .          200.00000      336.00000       1.85185   15022.22222 x_kbh
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   3
+
+Problem:    
+Objective:  Objective = 14775 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 x_dh         BS     120.00000      50.00000        .              .           33.75000   12825.00000 Demand_2
+                                            .               +Inf      120.00000          +Inf          +Inf
+
+     2 x_fn         BS      75.00000      45.00000        .            50.37037      40.00000   14400.00000 x_kbh
+                                            .               +Inf      165.00000      66.66667   16400.00000 Demand_2
+
+     3 x_kbh        NL        .           10.00000        .              .               -Inf   14775.00000 Non_Zero_Constraint_4
+                                          -1.25000          +Inf       98.51852      11.25000   14651.85185 Supply_5
+
+     4 x_kh         BS      90.00000      60.00000        .              .           11.25000   10387.50000 Demand_3
+                                            .               +Inf       90.00000          +Inf          +Inf
+
+End of report

@@ -1,0 +1,156 @@
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   1
+
+Problem:    
+Objective:  Objective = 18.86273028 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 Initial_Demand
+                    NS       5.84472        .            5.84472        3.04351          -Inf      18.86273 _C14
+                                            .            5.84472        7.83420          +Inf      18.86273 _C13
+
+     2 Initial_Discount
+                    NS        .57900        .             .57900         .57900          -Inf      18.86273 discount_0
+                                            .             .57900         .60000          +Inf      18.86273 _C3
+
+     3 Initial_Inventory
+                    NS      18.86273        .           18.86273       16.74672          -Inf      16.74672 _C13
+                                           1.00000      18.86273       22.12690          +Inf      22.12690 _C14
+
+     4 Initial_Price
+                    NS     606.00000        .          606.00000         .               -Inf      18.86273 price_0
+                                            .          606.00000           +Inf          +Inf      18.86273
+
+     5 _C1          BS      19.01839     -19.01839        .            18.91562        .           18.86273 _C7
+                                            .               +Inf       20.75139        .           18.86273 _C6
+
+     6 _C10         NU       1.90154        .               -Inf        -.18462        .           18.86273 _C14
+                                            .            1.90154        4.01755          +Inf      18.86273 _C13
+
+     7 _C11         NL        .             .             .              .               -Inf      18.86273 discount_2
+                                            .               +Inf         .02100        .           18.86273 _C3
+
+     8 _C12         NU        .             .               -Inf       -5.67267        .           18.86273 _C5
+                                            .             .             5.45920          +Inf      18.86273 inventory_2
+
+     9 _C13         BS       4.23202      -4.23202        .                -Inf        .           18.86273 inventory_4
+                                            .               +Inf        4.61427        .           18.86273 _C15
+
+    10 _C14         BS      -1.38138       3.26417          -Inf       -3.49738      -1.00000      20.24411 _C17
+                                            .            1.88280       -1.14820        .           18.86273 discount_4
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   2
+
+Problem:    
+Objective:  Objective = 18.86273028 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    11 _C15         NL        .             .             .              .               -Inf      18.86273 discount_2
+                                            .               +Inf         .02100        .           18.86273 _C3
+
+    12 _C16         NU        .             .               -Inf       -8.80239        .           18.86273 _C9
+                                            .             .             2.11601          +Inf      18.86273 inventory_3
+
+    13 _C17         NU        .             .               -Inf       -2.11601      -1.00000      16.74672 _C13
+                                           1.00000        .             3.26417          +Inf      22.12690 _C14
+
+    14 _C2          NU       1.93932        .               -Inf         .35753        .           18.86273 _C14
+                                            .            1.93932        3.06274          +Inf      18.86273 _C13
+
+    15 _C3          BS        .02100       -.02100        .              .             .           18.86273 _C11
+                                            .               +Inf         .02100          +Inf          +Inf
+
+    16 _C4          BS     -13.14114      13.14114          -Inf      -13.22285        .           18.86273 _C11
+                                            .             .           -13.14114          +Inf          -Inf
+
+    17 _C5          BS       5.67267      -5.67267        .             5.51842        .           18.86273 _C11
+                                            .               +Inf        5.70289        .           18.86273 _C7
+
+    18 _C6          NU       1.92038        .               -Inf         .18738        .           18.86273 _C14
+                                            .            1.92038        3.27274          +Inf      18.86273 _C13
+
+    19 _C7          NL        .             .             .              .               -Inf      18.86273 discount_1
+                                            .               +Inf         .02100        .           18.86273 _C3
+
+    20 _C8          NU        .             .               -Inf      -19.01839        .           18.86273 _C1
+                                            .             .             5.56593          +Inf      18.86273 inventory_1
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   3
+
+Problem:    
+Objective:  Objective = 18.86273028 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    21 _C9          BS       8.80239      -8.80239        .             8.51373        .           18.86273 _C15
+                                            .               +Inf       14.47506        .           18.86273 _C12
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   4
+
+Problem:    
+Objective:  Objective = 18.86273028 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 demand_1     BS       5.72159       1.00000        .             5.63988       1.00000      18.86273 _C11
+                                            .               +Inf        5.72159          +Inf          +Inf
+
+     2 demand_2     BS       5.56593       1.00000        .             5.50528       1.00000      18.86273 _C11
+                                            .               +Inf        5.58699       1.00000      18.86273 _C7
+
+     3 demand_3     BS       5.45920       1.00000        .             5.41043       1.00000      18.86273 _C15
+                                            .               +Inf        5.49214       1.00000      18.86273 _C11
+
+     4 demand_4     BS       2.11601       1.00000        .              .             .           16.74672 _C17
+                                            .               +Inf        2.30713       1.00000      18.86273 _C15
+
+     5 demand_0     BS       5.84472        .             .             5.84472          -Inf          -Inf
+                                            .               +Inf        5.84472          +Inf          +Inf
+
+     6 discount_0   BS        .57900        .             .57900         .57900          -Inf          -Inf
+                                            .             .60000         .57900          +Inf          +Inf
+
+     7 inventory_0  BS      18.86273        .             .            18.86273          -Inf          -Inf
+                                            .               +Inf       18.86273          +Inf          +Inf
+
+     8 price_0      BS     606.00000        .             .           606.00000          -Inf          -Inf
+                                            .               +Inf      606.00000          +Inf          +Inf
+
+     9 inventory_1  BS       5.56593        .             .             5.50528        .           18.86273 _C11
+                                            .               +Inf        5.58699        .           18.86273 _C7
+
+    10 discount_2   BS        .60000        .             .57900         .57900        .           18.86273 _C11
+                                            .             .60000         .60000          +Inf          +Inf
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   5
+
+Problem:    
+Objective:  Objective = 18.86273028 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    11 discount_3   BS        .60000        .             .57900         .57900        .           18.86273 _C15
+                                            .             .60000         .60000          +Inf          +Inf
+
+    12 inventory_2  BS       5.45920        .             .             5.41043        .           18.86273 _C15
+                                            .               +Inf        5.49214        .           18.86273 _C11
+
+    13 inventory_3  BS       2.11601        .             .              .           -1.00000      16.74672 _C17
+                                            .               +Inf        2.30713        .           18.86273 _C15
+
+    14 inventory_4  NL        .             .             .                -Inf          -Inf      18.86273
+                                            .               +Inf        4.23202        .           18.86273 _C13
+
+    15 discount_4   NU        .60000        .             .57900         .57900        .           18.86273 _C3
+                                            .             .60000         .60000          +Inf      18.86273 discount_2
+
+    16 discount_1   BS        .60000        .             .57900         .57900        .           18.86273 _C11
+                                            .             .60000         .60000          +Inf          +Inf
+
+End of report

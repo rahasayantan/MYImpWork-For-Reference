@@ -1,0 +1,7 @@
+1. Quora compile
+2. More on Text
+3. Look at the graph analysis for question similarity - Quora
+4. Coursera Mastering Kaggle - stuff
+5. Factorization Machines
+6. Zillow - Get the chart of what i did
+7. Start formulating scripts

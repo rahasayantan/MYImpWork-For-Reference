@@ -1,0 +1,85 @@
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   1
+
+Problem:    
+Objective:  Objective = 26150.85187 (MINimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 Constraint_for_State_S1_Policy_1
+                    BS     198.14905     -18.14905     180.00000           +Inf      -6.28153   24906.17364 Constraint_for_State_S1_Policy_2
+                                            .               +Inf      198.14905          +Inf          +Inf
+
+     2 Constraint_for_State_S1_Policy_2
+                    NL     160.00000        .          160.00000      143.88421      -5.34746   26064.67331 Constraint_for_State_S1_Policy_3
+                                           5.34746          +Inf           +Inf          +Inf          +Inf
+
+     3 Constraint_for_State_S1_Policy_3
+                    BS     211.42385     -11.42385     200.00000           +Inf      -7.54374   24555.92470 Constraint_for_State_S1_Policy_2
+                                            .               +Inf      211.42385          +Inf          +Inf
+
+     4 Constraint_for_State_S2_Policy_1
+                    BS     236.72520     -11.72520     225.00000           +Inf     -26.21858   19944.25242 Constraint_for_State_S2_Policy_3
+                                            .               +Inf      195.32355     338.22724  106217.76397 Constraint_for_State_S3_Policy_3
+
+     5 Constraint_for_State_S2_Policy_2
+                    BS     211.85095     -11.85095     200.00000           +Inf     -25.11468   20830.28398 Constraint_for_State_S2_Policy_3
+                                            .               +Inf      197.31463     218.95940   72537.61038 Constraint_for_State_S4_Policy_3
+
+     6 Constraint_for_State_S2_Policy_3
+                    NL     250.00000        .          250.00000      246.92242     -24.37290   26075.84219 Constraint_for_State_S4_Policy_1
+                                          24.37290          +Inf           +Inf          +Inf          +Inf
+
+     7 Constraint_for_State_S3_Policy_1
+                    BS     287.41130     -17.41130     270.00000      392.08067     -37.88866   15261.22234 Constraint_for_State_S3_Policy_3
+                                            .               +Inf      287.41130          +Inf          +Inf
+
+     8 Constraint_for_State_S3_Policy_2
+                    BS     256.24270     -16.24270     240.00000      354.82678     -40.22741   15842.87140 Constraint_for_State_S3_Policy_3
+                                            .               +Inf      243.00060     195.95670   76363.32403 Constraint_for_State_S4_Policy_3
+
+     9 Constraint_for_State_S3_Policy_3
+                    NL     300.00000        .          300.00000      297.99286     -29.68893   26091.26207 Constraint_for_State_S4_Policy_1
+                                          29.68893          +Inf      433.57783          +Inf   30116.63439 Constraint_for_State_S2_Policy_1
+
+    10 Constraint_for_State_S4_Policy_1
+                    BS     450.25150       -.25150     450.00000      548.60557     -26.38302   14271.85677 Constraint_for_State_S4_Policy_3
+                                            .               +Inf      450.25150          +Inf          +Inf
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   2
+
+Problem:    
+Objective:  Objective = 26150.85187 (MINimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    11 Constraint_for_State_S4_Policy_2
+                    BS     400.50301       -.50301     400.00000      471.18937     -36.70973   11448.49379 Constraint_for_State_S4_Policy_3
+                                            .               +Inf      400.50301          +Inf          +Inf
+
+    12 Constraint_for_State_S4_Policy_3
+                    NL     500.00000        .          500.00000      499.67775     -20.59071   26144.21646 Constraint_for_State_S4_Policy_1
+                                          20.59071          +Inf      626.02178          +Inf   28745.72946 Constraint_for_State_S2_Policy_2
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   3
+
+Problem:    
+Objective:  Objective = 26150.85187 (MINimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 x_s1         BS    6285.43074       1.00000        .                +Inf      -1.11226   12874.36722 Constraint_for_State_S1_Policy_2
+                                            .               +Inf     6285.43074          +Inf          +Inf
+
+     2 x_s2         BS    6358.90913       1.00000        .                +Inf      -2.16109    6049.78880 Constraint_for_State_S2_Policy_3
+                                            .               +Inf     6358.90913          +Inf          +Inf
+
+     3 x_s3         BS    6491.42180       1.00000        .          7671.88260      -2.35952    4342.78573 Constraint_for_State_S3_Policy_3
+                                            .               +Inf     6491.42180          +Inf          +Inf
+
+     4 x_s4         BS    7015.09019       1.00000        .          7875.46343      -2.01599    4993.40589 Constraint_for_State_S4_Policy_3
+                                            .               +Inf     7015.09019          +Inf          +Inf
+
+End of report
